@@ -1,6 +1,6 @@
 public class Manager {
     int workers;
-    Worker worker = new Worker();
+    Worker worker;
 
     public double getNumberOfSubordinates() {
         return workers;

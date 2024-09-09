@@ -7,7 +7,7 @@ public class Director {
     }
 
     public double getSalary() {
-        double stavka = worker.getSalary() * (Manager.getNumberOfSubordinates() / 100 * 9);
+        double stavka = worker.getSalary() * (getNumberOfSubordinates() / 100 * 9);
         return getNumberOfSubordinates() == 0 ? worker.getSalary() : stavka;
     }
 }
