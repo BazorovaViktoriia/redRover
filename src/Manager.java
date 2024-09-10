@@ -2,7 +2,7 @@ public class Manager {
     int workers;
     Worker worker;
 
-    public double getNumberOfSubordinates() {
+    public int getNumberOfSubordinates() {
         return workers;
     }
 
