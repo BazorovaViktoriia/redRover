@@ -11,6 +11,15 @@ public class Main {
         //SecondLesson.even(SecondLesson.a);
         //SecondLesson.even(SecondLesson.b);
         //SecondLesson.printHowMuchMoney();
-        System.out.println(EightLesson.numberToWords(730));
+        //System.out.println(EightLesson.numberToWords(730));
+        TaxPayment taxPayment = new TaxPayment();
+        Employee firstEmployee = new Employee("Иван", 2, 10500);
+        Employee secondEmployee = new Employee("Vasy", 0, 9000);
+
+        Employee[] employees = new Employee[]{firstEmployee,secondEmployee};
+        for (double nds : taxPayment.whiteSalary(employees)){
+            System.out.println(nds);
+        }
+
     }
 }
